@@ -58,7 +58,7 @@ module.exports = class
                 @debug 'redirect location', parsedUrl
 
                 @request _.extend({}, parsedUrl, {
-                    https: parsedUrl.protocol is 'https'
+                    https: parsedUrl.protocol is 'https' || parsedUrl.protocol.includes 'https'
                     state: options.state
                     unzip: options.unzip
                 }), cb
