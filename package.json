@@ -1,44 +1,71 @@
 {
+  "_from": "git://github.com/sparwelt/amazon-associate.git#master",
+  "_id": "amazon-associate@0.3.2",
+  "_inBundle": false,
+  "_location": "/amazon-associate",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "amazon-associate@git://github.com/sparwelt/amazon-associate.git#master",
     "name": "amazon-associate",
-    "description": "amazon-associate is a simple interface to amazon associate reports for nodejs",
-    "version": "0.3.2",
-    "keywords": ["amazon", "associate", "report"],
-    "homepage": "http://github.com/snd/amazon-associate",
-    "author": {
-        "name": "Maximilian Krüger",
-        "email": "kruemaxi@gmail.com",
-        "url": "http://github.com/snd"
-    },
-    "bugs": {
-        "url": "http://github.com/snd/amazon-associate/issues",
-        "email": "kruemaxi@gmail.com"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/snd/amazon-associate.git"
-    },
-    "licenses": {
-        "type": "MIT",
-        "url": "git://github.com/snd/amazon-associate/LICENSE"
-    },
-    "engines": {
-        "node": ">=0.8.5"
-    },
-    "dependencies": {
-        "underscore": "1.8.3",
-        "moment": "2.1.0",
-        "sax": "1.2.2"
-    },
-    "devDependencies": {
-        "coffee-script": "1.6.3",
-        "nodeunit": "0.8"
-    },
-    "main": "src/amazon",
-    "scripts": {
-        "prepublish": "coffee --bare --compile --output src src/*.coffee",
-        "postpublish": "rm src/*.js",
-        "pretest": "coffee --bare --compile --output src src/*.coffee && coffee --bare --compile --output test test/*.coffee",
-        "posttest": "rm src/*.js && rm test/*.js",
-        "test": "nodeunit test/*.js"
-    }
+    "escapedName": "amazon-associate",
+    "rawSpec": "git://github.com/sparwelt/amazon-associate.git#master",
+    "saveSpec": "git://github.com/sparwelt/amazon-associate.git#master",
+    "fetchSpec": "git://github.com/sparwelt/amazon-associate.git",
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git://github.com/sparwelt/amazon-associate.git#f68bdbf9f855ba2e4006e92e3e30c431fc13d64e",
+  "_spec": "amazon-associate@git://github.com/sparwelt/amazon-associate.git#master",
+  "_where": "/home/pawel/Work/workspace-js/bi-affiliate",
+  "author": {
+    "name": "Maximilian Krüger",
+    "email": "kruemaxi@gmail.com",
+    "url": "http://github.com/snd"
+  },
+  "bugs": {
+    "url": "http://github.com/snd/amazon-associate/issues",
+    "email": "kruemaxi@gmail.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "moment": "2.20.1",
+    "sax": "1.2.4",
+    "underscore": "1.8.3"
+  },
+  "deprecated": false,
+  "description": "amazon-associate is a simple interface to amazon associate reports for nodejs",
+  "devDependencies": {
+    "coffeescript": "2.2.2",
+    "nodeunit": "0.11.2"
+  },
+  "engines": {
+    "node": ">=0.8.5"
+  },
+  "homepage": "http://github.com/snd/amazon-associate",
+  "keywords": [
+    "amazon",
+    "associate",
+    "report"
+  ],
+  "licenses": {
+    "type": "MIT",
+    "url": "git://github.com/snd/amazon-associate/LICENSE"
+  },
+  "main": "src/amazon",
+  "name": "amazon-associate",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/snd/amazon-associate.git"
+  },
+  "scripts": {
+    "postpublish": "rm src/*.js",
+    "posttest": "rm src/*.js && rm test/*.js",
+    "prepublish": "coffee --bare --compile --output src src/*.coffee",
+    "pretest": "coffee --bare --compile --output src src/*.coffee && coffee --bare --compile --output test test/*.coffee",
+    "test": "nodeunit test/*.js"
+  },
+  "version": "0.3.2"
 }

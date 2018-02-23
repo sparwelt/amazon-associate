@@ -4,6 +4,7 @@ sax = require 'sax'
 
 module.exports = class extends EventEmitter
     constructor: ->
+        super()
         @reports = []
         @report = {}
         @mode = 'search-table-head-end'

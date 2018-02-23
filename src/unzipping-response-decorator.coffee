@@ -6,6 +6,7 @@ zlib = require 'zlib'
 module.exports = class extends EventEmitter
 
     constructor: (res) ->
+        super()
         @statusCode = res.statusCode
         @httpVersion = res.httpVersion
         @headers = res.headers

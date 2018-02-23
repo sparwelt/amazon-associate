@@ -5,6 +5,7 @@ sax = require 'sax'
 
 module.exports = class extends EventEmitter
     constructor: ->
+        super()
         @items = []
         @mode = 'search-item-list'
 
